@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.interfaces.Converter;
 
-public class ConverterIf implements Converter {
+public class ConverterSwitch implements Converter {
     @Override
     public String convertMonth(int monthNumber) {
         return null;
