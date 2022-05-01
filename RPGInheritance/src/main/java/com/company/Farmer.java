@@ -4,13 +4,11 @@ public class Farmer extends Role {
 
     public Farmer(String name) {
         this.name = name;
+        setStamina(75);
+        setStrength(75);
+        setSpeed(10);
+        setAttackPower(1);
     }
-
-    protected String name;
-    protected int strength = 75;
-    protected int stamina = 75;
-    protected int speed = 10;
-    protected int attackPower = 1;
 
     boolean plowing = false;
     boolean harvesting = false;

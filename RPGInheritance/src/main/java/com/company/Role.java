@@ -28,7 +28,6 @@ public abstract class Role {
     public void attackCharacter(Role enemy) {
         enemy.setHealth(enemy.getHealth() - attackPower);
         System.out.println(name + " attacked " + enemy.getName());
-        System.out.println(name + " attacked " + enemy.getName());
     }
 
     // GETTERS AND SETTERS

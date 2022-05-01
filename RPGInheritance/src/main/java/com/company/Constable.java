@@ -4,12 +4,11 @@ public class Constable extends Role {
 
     public Constable(String name) {
         this.name = name;
+        setStamina(60);
+        setSpeed(20);
+        setAttackPower(5);
+        setStrength(60);
     }
-
-    protected String name;
-    protected int stamina = 60;
-    protected int speed = 20;
-    protected int attackPower = 5;
 
     // what is jurisdiction?
 
