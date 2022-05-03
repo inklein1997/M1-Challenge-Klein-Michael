@@ -1,18 +1,6 @@
 package com.company;
 
 public abstract class Role {
-//    public Role(String name, int strength, int health, int stamina, int speed, int attackPower, int running, int arrested) {
-//        this.name = name;
-//        this.strength = strength;
-//        this.health = health;
-//        this.stamina = stamina;
-//        this.speed = speed;
-//        this.attackPower = attackPower;
-//        this.running = running;
-//        this.arrested = arrested;
-//    }
-
-//    public Role() {}
 
     protected String name;
     protected int strength;

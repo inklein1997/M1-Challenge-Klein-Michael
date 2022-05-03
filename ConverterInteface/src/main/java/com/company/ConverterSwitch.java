@@ -31,7 +31,7 @@ public class ConverterSwitch implements Converter {
             case 12:
                 return "December";
             default:
-                return "Please enter a Number, 1-12";
+                return "Please enter an integer between 1 and 12";
         }
     }
 
@@ -53,7 +53,7 @@ public class ConverterSwitch implements Converter {
             case 7:
                 return "Saturday";
             default:
-                return null;
+                return "Please enter an integer between 1 and 7";
         }
     }
 }

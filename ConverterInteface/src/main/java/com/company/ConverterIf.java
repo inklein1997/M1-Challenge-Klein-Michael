@@ -27,8 +27,10 @@ public class ConverterIf implements Converter {
             return "October";
         } else if (monthNumber == 11) {
             return "November";
-        } else {
+        } else if (monthNumber == 12) {
             return "December";
+        } else {
+            return "Please enter an integer between 1 and 12";
         }
     }
     @Override
@@ -45,8 +47,10 @@ public class ConverterIf implements Converter {
             return "Thursday";
         } else if (dayNumber == 6) {
             return "Friday";
-        } else {
+        } else if (dayNumber == 7){
             return "Saturday";
+        } else {
+            return "Please enter an integer between 1 and 7";
         }
     }
 }

@@ -17,24 +17,30 @@ public class ConverterApplicationTest {
     }
 
     @Test
-    public void shouldConvertIntegersToMonth() {
-        assertEquals("February", converterIf.convertMonth(2));
-        assertEquals("May", converterIf.convertMonth(5));
-        assertEquals("December", converterIf.convertMonth(12));
-
+    public void shouldConvertIntegersToMonthUsingSwitch() {
         assertEquals("March", converterSwitch.convertMonth(3));
         assertEquals("July", converterSwitch.convertMonth(7));
         assertEquals("November", converterSwitch.convertMonth(11));
     }
 
     @Test
-    public void shouldConvertIntegersToWeekDay() {
-        assertEquals("Sunday", converterIf.convertDay(1));
-        assertEquals("Wednesday", converterIf.convertDay(4));
-        assertEquals("Thursday", converterIf.convertDay(5));
+    public void shouldConvertIntegersToMonthUsingIf() {
+        assertEquals("February", converterIf.convertMonth(2));
+        assertEquals("May", converterIf.convertMonth(5));
+        assertEquals("December", converterIf.convertMonth(12));
+    }
 
+    @Test
+    public void shouldConvertIntegersToWeekDayUsingSwitch() {
         assertEquals("Monday", converterSwitch.convertDay(2));
         assertEquals("Tuesday", converterSwitch.convertDay(3));
         assertEquals("Saturday", converterSwitch.convertDay(7));
+    }
+
+    @Test
+    public void shouldConvertIntegersToWeekDayUsingIf() {
+        assertEquals("Sunday", converterIf.convertDay(1));
+        assertEquals("Wednesday", converterIf.convertDay(4));
+        assertEquals("Thursday", converterIf.convertDay(5));
     }
 }
