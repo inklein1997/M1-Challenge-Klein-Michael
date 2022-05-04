@@ -12,4 +12,11 @@ public class Warrior extends Role {
 
     protected int shieldStrength = 100;
 
+    public int getShieldStrength() {
+        return shieldStrength;
+    }
+
+    public void setShieldStrength(int shieldStrength) {
+        this.shieldStrength = shieldStrength;
+    }
 }

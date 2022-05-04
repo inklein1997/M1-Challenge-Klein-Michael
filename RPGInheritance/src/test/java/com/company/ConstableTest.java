@@ -11,7 +11,7 @@ public class ConstableTest {
 
     @Before
     public void setUp() {
-        constable = new Constable("Frank Columbo");
+        constable = new Constable("Frank Columbo", "Precinct 23");
     }
 
     @Test

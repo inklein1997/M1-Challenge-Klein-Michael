@@ -30,7 +30,7 @@ public class FarmerTest {
 
     @Test
     public void shouldAttackAnotherCharacter() {
-        Constable constable = new Constable("Lt. Lee Brice");
+        Constable constable = new Constable("Lt. Lee Brice", "Precinct 2314");
         farmer.attackCharacter(constable);
 
         assertEquals(99, constable.getHealth());
